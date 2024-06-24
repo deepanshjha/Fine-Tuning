@@ -50,7 +50,7 @@ prompt = PromptTemplate(
     input_variables=["question", "context"],
 )
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"]="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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"]= HF_TOKEN
 llm=HuggingFaceEndpoint(repo_id="HuggingFaceH4/zephyr-7b-beta", api_key=HF_TOKEN)
 
 # llm = ChatOllama(model="deepudj/dj-phi3", temperature=0)
